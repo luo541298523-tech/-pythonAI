@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python 在线学习平台</title>
-    <script src="/static/pyodide/pyodide.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
     <style>
         :root {
             --bg-color: #1e1e1e; --panel-bg: #252526; --border-color: #333333;
@@ -160,7 +160,7 @@
                 outputArea.value = "首次运行正在初始化 Python 环境，请稍候...\n";
                 try {
                     window.pyodide = await loadPyodide({
-                        indexURL: "/static/pyodide/", 
+                        indexURL: "https://cdn.jsdelivr.net/pyodide/v0.25.1/full/", 
                         stdout: (text) => { window.append_to_output(text + '\n'); },
                         stderr: (text) => { window.append_to_output(text + '\n'); }
                     });
