@@ -6,7 +6,7 @@ app = Flask(__name__)
 # 设置 session 密钥，用于加密浏览器 cookie
 app.secret_key = 'python_class_secret_key' 
 
-ZHIPU_API_KEY = "YOUR_API_KEY"
+ZHIPU_API_KEY = "ad1000068d12423484cc1a3d50b945d5.TVtbgiQpHK3Y8NY4"
 
 # 初始化本地 SQLite 数据库
 def init_db():
