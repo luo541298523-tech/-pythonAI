@@ -35,7 +35,7 @@ def login():
         
         # 管理员登录逻辑
         if login_type == 'admin':
-            if request.form.get('username') == 'admin' and request.form.get('password') == 'admin123456':
+            if request.form.get('username') == 'admin' and request.form.get('password') == 'admin':
                 session['user_type'] = 'admin'
                 return redirect(url_for('admin'))
             else:
